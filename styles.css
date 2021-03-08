@@ -1,0 +1,199 @@
+/*background*/
+html {
+  background-color: black;
+  color: white;
+}
+
+.body {
+  background-color: rgba(0, 0, 77, 0.6);
+  margin: 0% 10%;
+}
+
+.insidebody {
+  background-image: linear-gradient(to bottom, #1a1a1a, #ff33ff);
+  margin: 0% 02%;
+}
+
+/*headers*/
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 40px;
+  font-family: 'Press Start 2P', cursive;
+  color: green;
+  text-shadow: 4px 4px 10px black;
+  padding: 50px 20% 0px 20%;
+}
+
+nav {
+  text-align: center;
+}
+
+/*nav*/
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: #ff0066;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.navbar a:hover {
+  background-color: purple;
+}
+
+.active {
+  background-color: #000;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+/*making a break up line*/
+.line {
+  text-align: center;
+  background-color: purple;
+  height: 5px;
+  width: 95%;
+
+  margin: 40px auto;
+}
+/*display image home page*/
+.frontimagecontainer {
+  position: relative;
+  text-align: center;
+  color: #1a1a1a;
+  text-shadow: 2px 2px 5px white;
+  font-size: 24px;
+  font-family:'Architects Daughter', cursive;
+  width: 100%;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Sizing Article Columns*/
+article {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 50px;
+  height: 300px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*overlay text*/
+.container {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Architects Daughter', cursive;
+  color: black;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 130%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  border-radius: 50px;
+  height: 280px
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 300px;
+}
+
+/* Stay Safe Section */
+section {
+  text-align: center;
+  color: Black;
+  margin: auto 50px;
+  padding: 10px 10px;
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+section h2 {
+  font-family: 'Press Start 2P', cursive;
+}
+table, th, td {
+  font-family: 'Architects Daughter', cursive;
+  border-collapse: collapse;
+  text-align: left;
+}
+th, td {
+  padding: 5px;
+}
+
+/*Footer */
+body footer {
+  background-color: #000000;
+  color: white;
+  color: rgba(255, 255, 255, 0.6);
+  font: normal small-caps bold 16px/20px "Geneva", sans-serif;
+  text-align: center;
+  padding: 5px 0 0 0;
+
+
+}
+body footer a {
+    text-decoration: none;
+    color: white;
+    margin:5px;
+
+}
+body footer a:hover {
+  color: blue;
+}
